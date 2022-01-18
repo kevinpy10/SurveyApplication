@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="@color/purple_1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp">
+
+        <TextView
+            android:id="@+id/tv_survey_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi Text To Speech (TTS) Berbahasa Indonesia Sebagai Pembaca SMS"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_survey_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By : ivan_Su"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tv_survey_title"/>
+
+        <ImageView
+            android:id="@+id/iv_coins"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/coins"
+            android:layout_below="@+id/tv_survey_title"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_filled_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 50.000"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_survey_title"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_coins"/>
+
+        <ImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_check_circle_outline_24"
+            android:layout_below="@+id/tv_survey_title"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/tv_filled_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17 Oktober 2020"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_survey_title"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_circle"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

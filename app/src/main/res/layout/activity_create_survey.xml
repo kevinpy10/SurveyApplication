@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSurveyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="555dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_create_survey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New Survey"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:layout_marginTop="20dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_category"
+                android:layout_below="@+id/tv_create_survey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Survey Category"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/et_survey_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/til_category"
+                android:hint="Survey title..."/>
+
+            <EditText
+                android:id="@+id/et_survey_desc"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/et_survey_title"
+                android:hint="Survey description..." />
+
+            <EditText
+                android:id="@+id/et_survey_reward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/et_survey_desc"
+                android:hint="Max reward..."
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/et_survey_participant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/et_survey_reward"
+                android:hint="Max participant..."
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/et_survey_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/et_survey_participant"
+                android:hint="Google Form URL..." />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:backgroundTint="@color/purple_3"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/et_survey_url"
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

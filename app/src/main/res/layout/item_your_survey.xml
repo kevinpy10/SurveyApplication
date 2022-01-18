@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_your_survey"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="@color/purple_1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp">
+
+        <TextView
+            android:id="@+id/tv_survey_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi Text To Speech (TTS) Berbahasa Indonesia Sebagai Pembaca SMS"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/iv_group"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/group"
+            android:layout_below="@+id/tv_survey_title"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_participant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17/50"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_survey_title"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_group"/>
+
+        <TextView
+            android:id="@+id/tv_created_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17 Oktober 2020"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_survey_title"
+            android:layout_marginTop="34dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

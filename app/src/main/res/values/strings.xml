@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">$urvey</string>
+
+    <string name="category">Survey Category</string>
+</resources>

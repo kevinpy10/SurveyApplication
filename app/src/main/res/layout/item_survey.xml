@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_survey"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="@color/purple_1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp">
+
+        <TextView
+            android:id="@+id/tv_survey_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi Text To Speech (TTS) Berbahasa Indonesia Sebagai Pembaca SMS"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_survey_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By : lilie10_"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tv_survey_title"/>
+
+        <ImageView
+            android:id="@+id/iv_group"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/group"
+            android:layout_below="@+id/tv_survey_author"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_participant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17/50"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_survey_author"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_group"/>
+
+        <ImageView
+            android:id="@+id/iv_coins"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/coins"
+            android:layout_below="@+id/tv_survey_author"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/tv_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 25.000"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_survey_author"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_coins"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

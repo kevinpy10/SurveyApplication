@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:ems="12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:ems="12"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etUsername"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:ems="12"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:ems="12"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etConfirmPassword"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email "
+        android:inputType="textEmailAddress"
+        android:ems="12"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etPhone"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

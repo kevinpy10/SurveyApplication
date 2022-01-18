@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WithdrawActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_withdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Withdraw"
+        android:textSize="24sp"
+        android:textColor="#281D48"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_your_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Balance : "
+        android:textSize="16sp"
+        android:textColor="#281D48"
+        android:layout_below="@+id/tv_withdraw"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/tv_user_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. User Balance"
+        android:textSize="16sp"
+        android:textColor="#281D48"
+        android:layout_toRightOf="@+id/tv_your_balance"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tv_withdraw"/>
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Withdrawal amount :"
+        android:textSize="14sp"
+        android:textColor="#6B6873"
+        android:layout_below="@+id/tv_your_balance"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_amount"
+        android:textSize="14sp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/tv_account_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account number :"
+        android:textSize="14sp"
+        android:textColor="#6B6873"
+        android:layout_below="@+id/et_amount"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/et_account_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_account_num"
+        android:textSize="14sp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btn_withdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Withdraw"
+        android:backgroundTint="#00FF00"
+        android:layout_below="@+id/et_account_num"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:backgroundTint="#FF0000"
+        android:layout_below="@+id/et_account_num"
+        android:layout_toRightOf="@+id/btn_withdraw"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

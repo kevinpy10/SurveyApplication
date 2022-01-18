@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurveyDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="540dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_survey_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Survey Details"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category :"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_survey_detail"
+                android:layout_marginTop="35dp" />
+
+            <TextView
+                android:id="@+id/tv_category_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Survey Perencanaan Acara"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tv_category"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title :"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_category_content"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/tv_title_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aplikasi Text To Speech (TTS) Berbahasa Indonesia Sebagai Pembaca SMS"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tv_title"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description :"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_title_content"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/tv_description_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non pulvinar neque laoreet suspendisse interdum consectetur libero. Diam vel quam elementum pulvinar. Mi proin sed libero enim sed faucibus. Tellus cras adipiscing enim eu turpis."
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tv_description"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/tv_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reward :"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_description_content"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/tv_reward_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 25.000,00 / Participant"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tv_reward"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/tv_participant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Participant :"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_reward_content"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/tv_participant_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17 / 50 Participants"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tv_participant"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Created by"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_participant_content"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/tv_author_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lilie10_"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tv_participant_content"
+                android:layout_toRightOf="@+id/tv_author"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Start survey"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:backgroundTint="@color/purple_3"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_author"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        app:menu="@menu/nav_bar"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopUpActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_topup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Up Balance"
+        android:textSize="24sp"
+        android:textColor="#281D48"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_your_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Balance : "
+        android:textSize="16sp"
+        android:textColor="#281D48"
+        android:layout_below="@+id/tv_topup"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/tv_user_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. User Balance"
+        android:textSize="16sp"
+        android:textColor="#281D48"
+        android:layout_toRightOf="@+id/tv_your_balance"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tv_topup"/>
+
+        <RadioGroup
+        android:id="@+id/rg_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_your_balance"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true">
+
+            <RadioButton
+                android:id="@+id/rb_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 100.000"/>
+
+            <RadioButton
+                android:id="@+id/rb_250"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 250.000"/>
+
+            <RadioButton
+                android:id="@+id/rb_500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 500.000"/>
+
+            <RadioButton
+                android:id="@+id/rb_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 1.000.000"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input your password..."
+        android:layout_below="@+id/rg_1"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_topup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Up"
+        android:backgroundTint="#00FF00"
+        android:layout_below="@+id/et_password"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:backgroundTint="#FF0000"
+        android:layout_below="@+id/et_password"
+        android:layout_toRightOf="@+id/btn_topup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

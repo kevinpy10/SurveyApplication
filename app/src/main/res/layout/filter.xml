@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_filter_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Filter By"
+        android:textColor="#281D48"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Survey Categories :"
+        android:textColor="#6B6873"
+        android:layout_below="@+id/tv_filter_by"
+        android:layout_marginTop="10dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cg_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:layout_below="@+id/tv_categories">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_cat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kesehatan"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_cat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemasaran"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_cat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendidikan"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_cat4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net Promotor"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_cat5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penelitian Pasar"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_cat6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kepuasan Pelanggan"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_cat7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kepuasan Pegawai"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_cat8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perencanaan Acara"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/tv_sort_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort By :"
+        android:textColor="#6B6873"
+        android:layout_below="@+id/cg_categories"
+        android:layout_marginTop="10dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cg_sort_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:layout_below="@+id/tv_sort_by">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_atoz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A ~ Z"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_ztoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z ~ A"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_ltoh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low to High"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/c_htol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High to Low"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_below="@+id/cg_sort_by"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurveyCompletedActivity"
+	android:padding="20dp">
+
+	<TextView
+		android:id="@+id/tv_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Thankyou"
+		android:textSize="24dp"
+		android:layout_marginTop="20dp"
+		android:textColor="@color/black"
+		android:layout_centerHorizontal="true"/>
+	<TextView
+		android:id="@+id/tv_2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="for your response!"
+		android:textSize="24dp"
+		android:textColor="@color/black"
+		android:layout_below="@+id/tv_1"
+		android:layout_centerHorizontal="true"/>
+
+	<TextView
+		android:id="@+id/tv_3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="We are happy that you help"
+		android:textSize="24dp"
+		android:textColor="@color/black"
+		android:layout_marginTop="30dp"
+		android:layout_below="@+id/tv_2"
+		android:layout_centerHorizontal="true"/>
+
+	<TextView
+		android:id="@+id/tv_4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="each other!"
+		android:textSize="24dp"
+		android:textColor="@color/black"
+		android:layout_below="@+id/tv_3"
+		android:layout_centerHorizontal="true"/>
+
+	<ImageView
+		android:id="@+id/iv_smile"
+		android:layout_width="230dp"
+		android:layout_height="230dp"
+		android:background="@drawable/ic_baseline_insert_emoticon_24"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/tv_4"/>
+
+	<TextView
+		android:id="@+id/tv_reward"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Rp. 10,000"
+		android:textSize="24dp"
+		android:textColor="@color/reward"
+		android:layout_marginLeft="50dp"
+		android:layout_below="@+id/iv_smile" />
+
+	<TextView
+		android:id="@+id/tv_5"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=" has been put"
+		android:textSize="24dp"
+		android:textColor="@color/black"
+		android:layout_below="@+id/iv_smile"
+		android:layout_toRightOf="@+id/tv_reward"/>
+
+	<TextView
+		android:id="@+id/tv_6"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="into your wallet."
+		android:textSize="24dp"
+		android:textColor="@color/black"
+		android:layout_below="@+id/tv_5"
+		android:layout_centerHorizontal="true"/>
+
+	<Button
+		android:id="@+id/btn_yeay"
+		android:layout_width="120dp"
+		android:layout_height="wrap_content"
+		android:text="Yeayy!"
+		android:textAllCaps="false"
+		android:textSize="16dp"
+		android:backgroundTint="@color/purple_3"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/tv_6"
+		android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
